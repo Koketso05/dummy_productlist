@@ -1,0 +1,16 @@
+<p>List of Products</p>
+<!-- <pre>{{products | json}}</pre> -->
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Price</th>
+    <th>Discount Percentage</th>
+    <th>Rating</th>
+  </tr>
+  <tr *ngFor="let product of products">
+    <td>{{product.title}}</td>
+    <td>{{product.price }}</td>
+    <td>{{product.discountPercentage}}</td>
+    <td>{{product.rating}}</td>
+  </tr>
+</table>
